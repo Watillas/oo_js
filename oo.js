@@ -15,7 +15,7 @@ class salario extends pessoa{
  }
 
  class linguagem extends pessoa {
-    constructor (nome, idade, trabalho, lingugem){
+    constructor (nome, idade, trabalho, linguagem){
         super(nome,idade,trabalho)
         this.linguagem = linguagem;
     }
