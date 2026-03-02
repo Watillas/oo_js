@@ -6,16 +6,16 @@ class pessoa{
     }
 }
 
- class funcionario1 extends pessoa{ 
-     constructor (nome, idade, trabalho){
+class salario extends pessoa{ 
+     constructor (nome, idade, trabalho,salario){
         super(nome, idade, trabalho)
         this.salario = salario;
      }
 
  }
 
- class funcionario2 extends pessoa {
-    constructor (nome, idade, trabalho){
+ class linguagem extends pessoa {
+    constructor (nome, idade, trabalho, lingugem){
         super(nome,idade,trabalho)
         this.linguagem = linguagem;
     }
@@ -23,9 +23,9 @@ class pessoa{
  }
 
 
- const pessoa1 = new pessoa1 ("watillas" , 23, "back-end" , 3000 , "pyhton")
- const pessoa2 = new pessoa2 ("matheus",18,"front-end",2500,"html")
- const pessoa3 = new pessoa3 ("julio",30,"dev",5000,"js")
+ const pessoa1 = new salario("watillas" , 23, "back-end" , 3000 )
+ const pessoa2 = new linguagem ("matheus",18,"front-end",2500,"html")
+ const pessoa3 = new linguagem("julio",30,"dev",5000,"js")
 
  console.log(pessoa1);
  console.log(pessoa2);
